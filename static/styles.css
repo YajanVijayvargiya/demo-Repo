@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background: #f7f7fb; color: #222; }
+header { background: #26293a; color: #fff; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; }
+h1 { margin: 0; font-size: 20px; }
+.role-toggle label { margin-left: 12px; }
+main { padding: 20px; max-width: 1000px; margin: 0 auto; }
+
+.hidden { display: none; }
+
+.card-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.card { background: #fff; border-radius: 8px; padding: 12px 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.card h4 { margin: 8px 0; }
+
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+label { display: block; font-size: 14px; margin: 8px 0; }
+input, select, button { padding: 8px 10px; font-size: 14px; }
+button { background: #3a5bdc; border: none; color: #fff; border-radius: 6px; cursor: pointer; margin-right: 8px; }
+button:hover { background: #2e4cc4; }
+
+.order-item-row { display: grid; grid-template-columns: 1fr 120px 100px; align-items: end; gap: 10px; margin: 8px 0; }
+.feedback { margin-top: 10px; color: #0a7a0a; }
+.feedback.error { color: #b00020; }

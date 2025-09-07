@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Marketplace</title>
+	<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+	<header>
+		<h1>Marketplace</h1>
+		<div class="role-toggle">
+			<label>
+				<input type="radio" name="role" value="buyer" checked /> Buyer
+			</label>
+			<label>
+				<input type="radio" name="role" value="seller" /> Seller
+			</label>
+		</div>
+	</header>
+
+	<main>
+		<section id="buyer-section">
+			<h2>Available Products</h2>
+			<div id="product-list" class="card-list"></div>
+
+			<h3>Place Order</h3>
+			<form id="order-form">
+				<div class="grid-2">
+					<label>Customer Name
+						<input id="customer_name" required maxlength="100" />
+					</label>
+					<label>Address
+						<input id="address" required maxlength="200" />
+					</label>
+				</div>
+				<div id="order-items"></div>
+				<button type="button" id="add-item">Add Item</button>
+				<button type="submit">Place Order</button>
+			</form>
+			<div id="order-feedback" class="feedback"></div>
+		</section>
+
+		<section id="seller-section" class="hidden">
+			<h2>Orders</h2>
+			<div id="orders-list" class="card-list"></div>
+
+			<h2>Inventory</h2>
+			<div id="inventory-list" class="card-list"></div>
+		</section>
+	</main>
+
+	<script src="/static/app.js"></script>
+</body>
+</html>
